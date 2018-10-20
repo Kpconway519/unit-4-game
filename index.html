@@ -11,40 +11,40 @@
     <title>Crystal Counter Game</title>
 </head>
 <body>
-<div class="container">
-    <h1 class="text-center" style="background-color: #800000; font-family: Georgia, 'Times New Roman', Times, serif; height: 50px;color: white;">Crystal Collector!</h1>
+<div class="container" style="padding: 0;">
+    <h1 class="text-center" style="background-color: #924a4a; font-family: Georgia, 'Times New Roman', Times, serif; height: 50px; color: white; border-radius: 5px;">Crystal Collector!</h1>
     <br>
-    <div style="background-color: orange;  margin-right: 300px;" class="row col-sm-6">
+    <div class="row">
 
-        <p>
-            You will be given a random number at the start of the game.
-        </p>
-        <p>
-            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-        </p>
-        <p>
-            You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
-        </p>
-        <p>
-            The value of each crystal is hidden from you until you click on it.
-        </p>
-        <p>
-            Each the game starts, a new random number will be chosen.
-        </p>
-    </div> <!--end of paragraph block-->
-    <br>
-    <div class="row col-sm-6">
-
-        <div id="goalNumber" style="background-color: orange; margin-top: 20px; margin-right: 10px;font-size: 24px;" class="row col-sm-4">
-                0
-
-        </div> <!--end of goalNumber div-->
-        <div style="background-color: orange; margin-top: 20px; margin-left: 10px;" class="row col-sm-4">
-                   Wins: <div id="wins"></div>
-                   Losses: <div id="losses"></div>
-        </div> <!--end of wins/losses div-->
+        <div style="background-color: orange; border-radius: 5px;margin-right: 20px;" class="row col-sm-6">
                 
-    </div> <!--end of row with goal number and wins losses-->
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each the game starts, a new random number will be chosen.
+                </p>
+            </div> <!--end of paragraph block-->
+            <br>
+            <div class="col-sm-6">
+                    
+                <div id="goalNumber" style="background-color: orange; margin-top: 20px; margin-right: 10px;font-size: 24px; border: 1px dotted red;border-radius: 5px; margin-right: 50px;" class="row col-sm-6 text-center ">0</div> <!--end of goalNumber div-->
+                <div style="background-color: orange; margin-top: 20px; border-radius: 5px;" class="row col-sm-6">
+                        Wins: <div id="wins"></div>
+                        Losses: <div id="losses"></div>
+                </div> <!--end of wins/losses div-->
+                    
+                </div> <!--end of row with goal number and wins losses-->
+    </div>
     <div style="margin-top: 20px" class="row col-sm-10">
         <img style="width: 100px; height: 100px; margin-left" id="aqua1" class="thumbnail d- img-responsive crystalButton col-sm-2" src="assets/images/Aqua.jpg" alt="Aqua">
         
@@ -56,15 +56,12 @@
 
     </div>
     <br>
-    <div style="background-color: green; margin-right: 300px" class="row col-sm-4">
+    <div style="background-color: green; border-radius: 5px" class="row col-sm-6 text-center">
         <p>
-            Your total score is: 
+            Your total score is: <div style="font-size: 24px;" id="scoreDisplay">0</div>
         </p>
     </div>
-    <br>
-    <div style="background-color: green; margin-top: 20px;" class="row col-sm-4">
-            <div style="font-size: 24px;" id="scoreDisplay">0</div> 
-    </div> <!--score is displayed here-->
+
     
 </div> <!--end of container-->
 <script
